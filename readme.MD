@@ -16,3 +16,22 @@ An include is then
 
 INCLUDE PACKAGE.BP.INCLUCE <include>
 
+# Unidata
+
+```
+CREATE-FILE DICT MVMAKE.BP 11
+
+ED VOC MVMAKE.BP
+1> DIR
+2> /usr/local/mvappsvr/pkgs/mvmake/MVMAKE.BP
+3> <leave as is>
+
+ED VOC MVMAKE.BP.ROOT
+1> DIR
+2> /usr/local/mvappsvr/pkgs/mvmake
+3> <SAME AS MVMAKE.BP>
+
+
+
+
+
