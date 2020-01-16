@@ -30,8 +30,16 @@ ED VOC MVMAKE.BP.ROOT
 1> DIR
 2> /usr/local/mvappsvr/pkgs/mvmake
 3> <SAME AS MVMAKE.BP>
+```
 
+```
+# jBASE
 
+ED MD MVMAMKE.BP
+1>F
+2>mvmake/MVMAKE.BP
+3>mvmake
+```
 
 
 
