@@ -32,9 +32,8 @@ ED VOC MVMAKE.BP.ROOT
 3> <SAME AS MVMAKE.BP>
 ```
 
-```
 # jBASE
-
+```
 ED MD MVMAMKE.BP
 1>F
 2>mvmake/MVMAKE.BP
