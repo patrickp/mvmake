@@ -129,7 +129,7 @@ build.directory:    *
     * 1/19/2020 PAP Modified this to allow {PLATFORM} to be part of the directory path.  This is for dependency sub directory includes
     
     IF INDEX(DIRECTORY.DIR.NAME,'{PLATFORM}',1) THEN
-        POS=INDEX(DIRECTORY.DIR.NAME,'{PLATFORM},1)
+        POS=INDEX(DIRECTORY.DIR.NAME,'{PLATFORM}',1)
         PRE.DIR=DIRECTORY.DIR.NAME[1,POS-1]
         AFT.DIR=DIRECTORY.DIR.NAME[POS+10,LEN(DIRECTORY.DIR.NAME)]
         DIRECTORY.DIR.NAME=PRE.DIR:MVTYPE:AFT.DIR
