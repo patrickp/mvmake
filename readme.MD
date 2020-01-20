@@ -40,5 +40,25 @@ ED MD MVMAMKE.BP
 3>mvmake
 ```
 
+# Unidata
+```
+CREATE-FILE (DICT MVMAKE.BP
+1>DIR
+2>mvmake/MVMAKE.BP
+3>D_MVMAKE.BP
+
+SELECT * TO COMPILE
+BASIC OFF LIST
+CATALOG WITH FORCE TO NOT ASK QUESTIONS
+
+
+
+## Work
+
+1/19/2020 4:18 - Need to adjust package to create q-pointers
+1/19/2020 4:18 - Need Make Clean to remove items
+
+
+
 
 
