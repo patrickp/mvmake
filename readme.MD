@@ -50,15 +50,26 @@ CREATE-FILE (DICT MVMAKE.BP
 SELECT * TO COMPILE
 BASIC OFF LIST
 CATALOG WITH FORCE TO NOT ASK QUESTIONS
+```
+# QM
+```
+QM looks to want the BP.OUT.  I think universe wants this also.
+
+ED MVMAKE.BP
+1>F
+2>mvmake/MVMAKE.BP]MVMAKE.BP/BP.OUT
+3>mvmake
+4>MVMAKE.BP]BP.OUT
+
+
 
 
 
 ## Work
-
+```
 1/19/2020 4:18 - Need to adjust package to create q-pointers
 1/19/2020 4:18 - Need Make Clean to remove items
-
-
+````
 
 
 
