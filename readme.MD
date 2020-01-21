@@ -69,6 +69,8 @@ ED MVMAKE.BP
 ```
 1/19/2020 4:18 - Need to adjust package to create q-pointers
 1/19/2020 4:18 - Need Make Clean to remove items
+1/21/2020 11:21AM - Told compiler to build F pointers the same as Universe.  Had to manually make into multi-part.
+
 ````
 
 
