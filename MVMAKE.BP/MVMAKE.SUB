@@ -117,10 +117,10 @@
 
     NUM.ENTRIES=DCOUNT(PACKAGE.MV,@AM)
 
-
     FOR L=1 TO NUM.ENTRIES
         ENTRY=PACKAGE.MV<L>
         COMMAND=OCONV(ENTRY<1,1>,"MCU")
+        PRINT COMMAND
         BEGIN CASE
             CASE COMMAND="DIRECTORY"; GOSUB build.directory
             CASE COMMAND="BASIC"; GOSUB compile.code
@@ -207,6 +207,7 @@ compile.code: *
 
 DIRECTORY=ENTRY<1,2>
 COMPILE.LIST.ID=ENTRY<1,3>
+
 PRINT
 PRINT '----------------------------------------------------------------------'
 PRINT 'COMPILE ':DIRECTORY:' ':COMPILE.LIST.ID:' ':
@@ -258,7 +259,11 @@ FOR BP.CNTR=1 TO NUM.BP.ITEMS
             CASE MVTYPE='D3'
             CASE MVTYPE='UNIDATA'
             CASE MVTYPE='UNIDATA'
-            CASE MVTYPE='D3'
+            CASE MVTYPE='QM'
+                BASIC.CMND="BASIC ":DIRECTORY:" ":BP.ITEM.NAME
+                BASIC.RESULT="0 error"
+                CATALOG.CMND="CATALOG ":DIRECTORY:" ":BP.ITEM.NAME
+                CATALOG.RESULT="added to"
             CASE 1; PRINT 'Invalid platform!!'
         END CASE
 
