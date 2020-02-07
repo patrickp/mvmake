@@ -70,6 +70,12 @@ ED MVMAKE.BP
 1/19/2020 4:18 - Need to adjust package to create q-pointers
 1/19/2020 4:18 - Need Make Clean to remove items
 1/21/2020 11:21AM - Told compiler to build F pointers the same as Universe.  Had to manually make into multi-part.
+02/06/2020 07:38PM - Update mvmake to have compile.  This was actually just a git pull issue.
+02/06/2020 07:39PM - Updated .gitignore with $!BASIC.OPTIONS
+                     Added option to write out MV.PLATFORM.JSON if it does not exist
+                     Added MVMAKE.QM
+                     
+
 
 ````
 
