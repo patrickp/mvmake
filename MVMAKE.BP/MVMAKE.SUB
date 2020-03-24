@@ -4,6 +4,7 @@
 
     CRT CMND
 
+    PRINT "1.1"
     PLATFORM=FIELD(CMND,' ',2)
     MVTYPE=FIELD(CMND,' ',3)
     PACKAGE.NAME=FIELD(CMND,' ',4)
@@ -268,7 +269,11 @@ FOR BP.CNTR=1 TO NUM.BP.ITEMS
                 CATALOG.CMND="CATALOG ":DIRECTORY:" ":BP.ITEM.NAME
                 CATALOG.RESULT="Cataloged"
             CASE MVTYPE='UNIDATA'
-            CASE MVTYPE='UNIDATA'
+            CASE MVTYPE='UNIVERSE'
+                BASIC.CMND="BASIC ":DIRECTORY:" ":BP.ITEM.NAME
+                BASIC.RESULT="Complete"
+                CATALOG.CMND="CATALOG ":DIRECTORY:" ":BP.ITEM.NAME:" FORCE"
+                CATALOG.RESULT="cataloged"
             CASE MVTYPE='QM'
                 BASIC.CMND="BASIC ":DIRECTORY:" ":BP.ITEM.NAME
                 BASIC.RESULT="0 error"
@@ -288,7 +293,7 @@ FOR BP.CNTR=1 TO NUM.BP.ITEMS
                     PRINT '  Catalog failed!! ':RESULT
                 END
             END ELSE
-                PRINT '  Compile Failed!! ':BASIC.RESULT
+                PRINT '  Compile Failed!! ':RESULT
             END
         END
     END

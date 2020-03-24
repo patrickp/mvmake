@@ -75,6 +75,7 @@ ED MVMAKE.BP
                      Added option to write out MV.PLATFORM.JSON if it does not exist
                      Added MVMAKE.QM
 02/09/2020 01:12PM - Added d3 compile options.  Also adjust (dict to data.  Still need to test fsi accounts!
+03/19/2020 12:24pm - Added universe compile/catalog items
                      
 
 
