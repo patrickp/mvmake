@@ -5,4 +5,5 @@ MVMAKE.BP]MOBJECT
 MVMAKE.BP]MOBJECT/*
 */*JSON
 **/_*
-
+tmp
+tmp/*
